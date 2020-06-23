@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>lave calculator</title>
+  <meta charset="utf-8">
+ <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style type="text/css">
+  	body{
+  		background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://images.pexels.com/photos/1002061/pexels-photo-1002061.jpeg?cs=srgb&dl=grayscale-photograph-group-of-children-1002061.jpg&fm=jpg');
+  		width: 100%;
+  		height: 100vh;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-position: center;
+  		position: relative;
+  	}
+  	header{
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+  	}
+  </style>
+</head>
+<body>
+<header>
+<div class="card text-center w-50 m-auto">
+	<div class="card-header bg-danger text-white">This Is Love Calculator</div>
+	     <div class="card-body">
+		<form class="form-inline w-75 m-auto text-center">
+			<div class="form-group">
+               <input type="text" name="" id="loveY" placeholder="Your Name" class="form-control">
+			</div>
+		    <div><span class="pl-4 pr-4">+</span></div>
+			<div class="form-group">
+			<input type="text" name="" id="loveN" placeholder="Love Name" class="form-control">
+			</div>
+		</form>
+		<br>
+		<div class="m-auto w-75">
+			<button onclick="lovegrue()" class="btn bg-success text-white w-75 text-capitalize">click me</button>
+	</div>
+	<br>
+	<div>
+		<input type="text" name="" id="lovevalue" class="form-control text-center w-25 m-auto">
+	</div>
+</div>
+<div class="card-header bg-light">God Bless Your RelationShip</div>
+</div>
+</header>
+<script type="text/javascript">
+	
+
+    function lovegrue(){
+    	var name = document.getElementById('loveY').value;
+	    var love = document.getElementById('loveN').value;
+
+	    if (name == "") {
+             alert('*** Please Enter Your Name.');
+	    }else if (name.length<= 2){
+             alert('*** Mini Length is 3');
+	    }else if (!isNaN(name)){
+             alert('*** Only chasraters are not allowed');
+      }else if (love == "") {
+             alert('*** Please Enter Your love.');
+	    }else if (love.length<= 2){
+             alert('*** Mini Length is 3');
+	    }else if (!isNaN(love)){
+             alert('*** Only chasraters are not allowed');
+      }if (love == "") {
+             alert('*** Please Enter Your love.');
+	    }else if (love.length<= 2){
+             alert('*** Mini Length is 3');
+	    }else if (!isNaN(love)){
+             alert('*** Only chasraters are not allowed');
+      }else{
+         var lavedata = Math.random() * 100;
+          lavedata = Math.floor(lavedata);
+          document.getElementById('lovevalue').value = lavedata + "%";
+      }
+    }
+
+</script>
+</body>
+</html>
